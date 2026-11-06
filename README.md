@@ -1,192 +1,152 @@
-# 🎮 CRUZ GAMING — Advanced Gamer Portfolio Website
+<div align="center">
 
-An ultra-modern, premium gaming portfolio and creator platform built for **Cruz Gaming** (Sreevisakh V S). Designed with a next-generation esports aesthetic inspired by AAA game launchers, NVIDIA GeForce aesthetics, and futuristic HUD interfaces.
+# 🎮 CRUZ GAMING — Next-Gen Gamer Portfolio & Streamer Hub
+
+<p align="center">
+  <strong>An ultra-modern, esports-grade gaming creator portfolio and livestreaming command center.</strong>
+</p>
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-portfolio--for--gamers.vercel.app-ff1744?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-for-gamers.vercel.app/)
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-6.1.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.18.2-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ESM%20%2F%20JSX-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+<br />
+
+[⚡ Live Preview](https://portfolio-for-gamers.vercel.app/) • [✨ Features](#-key-features) • [🚀 Quick Start](#-quick-start) • [⚙️ Customization](#️-configuration-driven-architecture) • [📡 API Setup](#-secure-youtube-api-proxy) • [📦 Deployment](#-deployment)
+
+<br />
+
+</div>
 
 ---
 
-## ⚡ Key Highlights
+## 🌟 Overview
 
-- **Config-Driven Architecture**: The entire website (branding, author name, links, games, battle rig specs, themes, features) is controlled via a single file: `src/config/siteConfig.js`. Rebrand the entire site in seconds.
-- **Advanced Dynamic Themes**: 7 built-in cyber themes (Cyber Red, Neon Blue, Purple Galaxy, Toxic Green, Orange Inferno, Pure Black, Gaming RGB) with 5 accent color overrides and persistent `localStorage` preferences.
-- **YouTube Data API v3 & Kick Streaming Telemetry**: Real-time channel analytics, live stream status, view counts, and video repertoire with automatic caching and graceful offline fallback.
-- **Secure Express API Proxy**: Backend proxy in `server/index.js` protects private API keys from frontend exposure.
-- **Framer Motion & Micro-Interactions**: Cinematic hero animations, 3D tilt cards, magnetic buttons, interactive canvas particle fields, and particle confetti celebrations.
-- **Accessibility & Reduced Motion**: Full support for `prefers-reduced-motion` and custom gaming cursor toggle.
-- **100% Pure JavaScript**: Built strictly with modern ES Modules and JSX (no TypeScript).
+**CRUZ GAMING** is a cutting-edge gaming creator portfolio engineered for competitive streamers, esports athletes, and content creators. Inspired by AAA game launchers, NVIDIA GeForce HUD interfaces, and cybernetic digital environments, it gives content creators a battle-ready digital presence.
+
+The entire website is **100% configuration-driven**: change creator name, channel branding, streaming channels, games, hardware specs, and colors inside a single configuration file without touching code.
+
+---
+
+## ⚡ Key Features
+
+- 🎮 **Single-File Rebranding**: Everything is controlled via `src/config/siteConfig.js`. Swap out channel names, avatar, bio, links, and games in seconds.
+- 🎨 **7 Cyberpunk Themes & Accents**:
+  - `Cyber Red` (Default)
+  - `Neon Blue`
+  - `Purple Galaxy`
+  - `Toxic Green`
+  - `Orange Inferno`
+  - `Pure Black`
+  - `Gaming RGB`
+  - 5 Accent Overrides: Red, Hyper Cyan, Ultra Purple, Matrix Emerald, Solar Amber.
+  - Persistent user preferences saved automatically in `localStorage`.
+- 📡 **Real-time YouTube & Kick Telemetry**:
+  - Dynamic subscriber count, channel views, and video counts via custom React hooks (`useYouTubeStats`).
+  - Automatic quota management, caching, and graceful offline fallback.
+  - Multi-platform live status detection (YouTube Live & Kick).
+- 🔒 **Secure Express API Proxy**: Backend server (`server/index.js`) keeps private Google API keys safe from client-side exposure.
+- 🎬 **YouTube Video Vault & Modal Player**:
+  - Embedded `ReactPlayer` lazy-loaded modal.
+  - Real-time search and genre filtering.
+  - Dedicated full video vault page (`/videos`).
+- 🕹️ **Gaming Library & Battlestation**:
+  - 3D interactive tilt cards (`TiltCard`) with specular glare reflection.
+  - Playtime tracker, competitive rank badges, and favorite indicators.
+  - Detailed hardware specs showcase (Rig, OLED display, Hall-effect keyboard, optical 8000Hz mouse, studio audio).
+- 🏆 **Interactive Trophy Room**:
+  - Career milestones timeline with interactive celebratory particle confetti (`canvas-confetti`).
+- 🌐 **Discord Guild & Direct Comms**:
+  - Live community member stats and instant invite button.
+  - Transmission contact form with `react-hot-toast` notifications.
+- ♿ **Performance & Accessibility**:
+  - Respects `prefers-reduced-motion`.
+  - Custom gaming crosshair cursor (auto-disabled on mobile touchscreens).
+  - Code-split vendor chunks for ultra-fast loads.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
+| Layer | Tools & Libraries |
 |---|---|
-| **Core Framework** | React 18+ (Vite) |
-| **Language** | JavaScript (ESM / JSX) |
-| **Styling** | Tailwind CSS + Custom CSS Variables & Animations |
-| **Animations** | Framer Motion |
-| **Icons** | Lucide React |
-| **Routing** | React Router DOM |
-| **Video Playback** | React Player |
-| **Notifications** | React Hot Toast |
-| **Effects** | Canvas Confetti, HTML5 Canvas Particle Engine |
-| **Backend Proxy** | Node.js Express + Cors + Dotenv |
+| **Frontend Framework** | [React 18](https://react.dev/) + [Vite](https://vitejs.dev/) |
+| **Language** | Modern JavaScript (ES Modules, JSX — No TypeScript) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + CSS Variables |
+| **Animations** | [Framer Motion](https://www.framer.com/motion/) |
+| **Iconography** | [Lucide React](https://lucide.dev/) |
+| **Routing** | [React Router DOM v6](https://reactrouter.com/) |
+| **Video Player** | [React Player](https://github.com/cookpete/react-player) |
+| **Notifications** | [React Hot Toast](https://react-hot-toast.com/) |
+| **Celebrations** | [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti) |
+| **Backend API Proxy** | Node.js Express + Cors + Dotenv |
+| **Deployment** | [Vercel](https://vercel.com/) |
 
 ---
 
-## 📁 Project Architecture
+## 🚀 Quick Start
 
-```text
-src/
-├── animations/
-│   └── variants.js              # Framer motion presets (fadeUp, scaleUp, glowPulse, etc.)
-│
-├── components/
-│   ├── animations/
-│   │   ├── AnimatedCounter.jsx  # Smooth number ticker with formatters
-│   │   ├── MagneticButton.jsx   # Cursor-tracking spring button
-│   │   ├── Reveal.jsx           # InView scroll trigger wrapper
-│   │   └── TiltCard.jsx         # 3D interactive tilt with specular glare
-│   │
-│   ├── gaming/
-│   │   ├── AchievementCard.jsx  # Milestone card with confetti on click
-│   │   ├── GameCard.jsx         # Game library card with rank & hours
-│   │   ├── GamingSetupCard.jsx  # Hardware rig & peripherals specs
-│   │   └── ProfileCard.jsx      # Gamer biography & combat attributes
-│   │
-│   ├── layout/
-│   │   ├── Footer.jsx           # Channel branding, links, back to top
-│   │   ├── Navbar.jsx           # Sticky nav, live status pill, theme toggle
-│   │   ├── PageLayout.jsx       # Layout shell, scroll indicator, canvas
-│   │   └── SectionWrapper.jsx   # Section shell with sci-fi telemetry coordinates
-│   │
-│   ├── streaming/
-│   │   ├── LiveBadge.jsx        # Animated LIVE pulse indicator
-│   │   ├── PlatformCard.jsx     # YouTube & Kick channel cards
-│   │   └── StreamCard.jsx       # Broadcast preview & quick player
-│   │
-│   ├── ui/
-│   │   ├── AnimatedBackground.jsx # HTML5 canvas particle & grid engine
-│   │   ├── Badge.jsx            # Cyber tag badges
-│   │   ├── Button.jsx           # Cyber, primary, outline, and ghost variants
-│   │   ├── Card.jsx             # Glassmorphic cyber panel with corner cuts
-│   │   ├── CustomCursor.jsx     # Gaming crosshair follower
-│   │   ├── LoadingScreen.jsx    # Bootup diagnostic telemetry screen
-│   │   ├── Modal.jsx            # Cyber popup modal with blur overlay
-│   │   ├── Skeleton.jsx         # Shimmering loading placeholder
-│   │   ├── ThemeSwitcher.jsx    # Visual drawer customizer
-│   │   └── Tooltip.jsx          # Futuristic hover tooltip
-│   │
-│   └── youtube/
-│       ├── FeaturedVideo.jsx    # Cinematic wide spotlight player
-│       ├── VideoCard.jsx        # Video card with duration & views
-│       ├── VideoGrid.jsx        # Searchable, filterable video grid
-│       ├── VideoModal.jsx       # ReactPlayer embedded modal
-│       └── YouTubeStats.jsx     # Real-time telemetry counters
-│
-├── config/
-│   └── siteConfig.js            # CENTRAL CONFIGURATION FILE (Source of Truth)
-│
-├── context/
-│   └── ThemeContext.jsx         # Theme, accent, FX, and motion state
-│
-├── hooks/
-│   ├── useLiveStatus.js         # Polls YouTube & Kick live feeds
-│   ├── useScrollProgress.js     # Scroll telemetry & active section spy
-│   ├── useTheme.js              # Theme accessor
-│   ├── useYouTubeStats.js       # Channel subscriber & view analytics
-│   └── useYouTubeVideos.js      # Video fetch, category filter & search
-│
-├── pages/
-│   ├── Home.jsx                 # Complete single-page command center
-│   ├── NotFound.jsx             # 404 Cyber radar anomaly screen
-│   └── Videos.jsx               # Dedicated full video vault
-│
-├── services/
-│   ├── streamingService.js      # Kick status service
-│   └── youtubeService.js        # YouTube proxy & caching service
-│
-├── styles/
-│   ├── animations.css           # Scanlines, corner cuts, glow keyframes
-│   ├── globals.css              # Base layer, selection, custom cursor
-│   └── themes.css               # Dynamic CSS variables for 7 themes
-│
-├── App.jsx                      # App root with routes & loading sequence
-├── main.jsx                     # Vite DOM entry
-└── index.html                   # HTML5 template with Orbitron & Rajdhani fonts
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) / [pnpm](https://pnpm.io/)
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/Portfolio-for-gamers.git
+cd Portfolio-for-gamers
 ```
 
----
-
-## 🚀 Quick Start Guide
-
-### 1. Install Dependencies
-
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-### 2. Configure Environment
-
-Copy `.env.example` to `.env`:
-
+### 3. Configure Environment Variables
+Copy the template file:
 ```bash
 cp .env.example .env
 ```
 
-Set your configuration:
+Edit `.env` (optional for local mock/demo telemetry mode):
 ```env
 # Frontend API URL
 VITE_API_BASE_URL=http://localhost:3000/api
 
-# Express Backend (Optional for live YouTube Data API v3)
+# Express Backend (Only needed if querying live YouTube Data API v3)
 PORT=3000
-YOUTUBE_API_KEY=YOUR_GOOGLE_YOUTUBE_API_KEY
+YOUTUBE_API_KEY=YOUR_YOUTUBE_API_KEY_HERE
 YOUTUBE_CHANNEL_ID=UC_x5XG1OV2P6uZZ5FSM9Ttw
 KICK_USERNAME=cruzgaming
 ```
 
-> **Note**: Even if you do not have a YouTube API key yet, the application will automatically run in demo telemetry mode with full high-fidelity sample data and zero broken UI!
+> 💡 **Demo Telemetry Mode**: If no API keys are provided, the application runs automatically with verified high-fidelity demo statistics. No broken UI or crashes!
 
-### 3. Run Development Server
-
-To run the frontend:
+### 4. Run Development Server
 ```bash
+# Run both Vite and Express proxy together:
+npm run dev:all
+
+# Or run Vite frontend standalone:
 npm run dev
 ```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-To run both Vite and the Express API proxy simultaneously:
-```bash
-npm run dev:all
-```
-
-Or run the Express server individually:
-```bash
-npm run server
-```
-
-### 4. Build for Production
-
-```bash
-npm run build
-```
-The optimized, tree-shaken static assets are generated in `dist/`.
-
-To preview the production build locally:
-```bash
-npm run preview
-```
+Visit **`http://localhost:5173`** in your browser.
 
 ---
 
-## ⚙️ Configuration & Customization (`siteConfig.js`)
+## ⚙️ Configuration-Driven Architecture
 
-You can customize the entire website without touching any components. Open `src/config/siteConfig.js`:
+To personalize the entire website for your own brand, edit **`src/config/siteConfig.js`**:
 
 ```javascript
 const siteConfig = {
   branding: {
     channelName: "Cruz Gaming",
+    handle: "@CruzGamingLive",
     authorName: "Sreevisakh V S",
     tagline: "LEVEL UP YOUR GAMING EXPERIENCE",
     subTagline: "Gaming | Streaming | Creating",
@@ -194,28 +154,38 @@ const siteConfig = {
     logo: "/images/logo.svg",
     avatar: "/images/avatar.svg",
     banner: "/images/banner.svg",
+    establishedYear: 2021,
   },
+
   social: {
     youtube: {
       enabled: true,
-      channelId: "YOUR_YOUTUBE_CHANNEL_ID",
-      channelUrl: "https://www.youtube.com/@YOUR_CHANNEL",
+      channelId: "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      channelUrl: "https://www.youtube.com/@CruzGamingLive",
+      featuredVideoId: "dQw4w9WgXcQ",
     },
     kick: {
       enabled: true,
-      username: "YOUR_KICK_USERNAME",
-      channelUrl: "https://kick.com/YOUR_USERNAME",
+      username: "cruzgaming",
+      channelUrl: "https://kick.com/cruzgaming",
     },
     discord: {
       enabled: true,
-      inviteUrl: "https://discord.gg/YOUR_INVITE",
+      serverName: "Cruz Gaming HQ",
+      inviteUrl: "https://discord.gg/cruzgaming",
+      memberCount: "12,450+",
+      onlineCount: "3,120",
     },
   },
+
   appearance: {
-    defaultTheme: "cyber-red", // Options: cyber-red, neon-blue, purple-galaxy, toxic-green, orange-inferno, pure-black, gaming-rgb
+    defaultTheme: "cyber-red", // 'cyber-red' | 'neon-blue' | 'purple-galaxy' | 'toxic-green' | 'orange-inferno' | 'pure-black' | 'gaming-rgb'
     defaultAccent: "red",
+    allowThemeSwitching: true,
+    allowBackgroundEffects: true,
+    allowCustomCursor: true,
   },
-  // Toggle sections on or off effortlessly
+
   features: {
     hero: true,
     liveStatus: true,
@@ -229,51 +199,132 @@ const siteConfig = {
     community: true,
     contact: true,
   },
-  // Add or edit games in your showcase
+
+  // Add your custom game library
   games: [ ... ],
-  // Add or edit your PC & streaming setup
+
+  // Add your gaming PC and peripherals specs
   setup: [ ... ],
-  // Career milestones
+
+  // Timeline milestones
   achievements: [ ... ],
 };
+
+export default siteConfig;
 ```
 
 ---
 
-## 🔒 Secure YouTube API Integration
+## 📡 Secure YouTube API Proxy
 
-In compliance with security best practices:
-- The secret `YOUTUBE_API_KEY` is **never exposed** in client-side code.
-- Client requests query `/api/youtube/stats`, `/api/youtube/videos`, and `/api/youtube/live`.
-- The Express server (`server/index.js`) securely communicates with `https://www.googleapis.com/youtube/v3/channels` using the environment key.
-- Includes a 10-minute in-memory cache to prevent exceeding Google API quota limits.
+Google YouTube Data API keys should **never** be exposed in client-side code. This repository includes an Express proxy in `server/index.js` that:
 
----
+1. Keeps `YOUTUBE_API_KEY` safe on the backend.
+2. Caches requests in memory for 10 minutes to protect your daily quota limits.
+3. Exposes clean endpoints:
+   - `GET /api/youtube/stats`
+   - `GET /api/youtube/videos`
+   - `GET /api/youtube/live`
+   - `GET /api/kick/status`
 
-## 🎨 Themes System
-
-Users can toggle themes on the fly from the floating **Visual Customizer** drawer:
-1. **Cyber Red** — Neon crimson with cyan HUD accents.
-2. **Neon Blue** — Deep sci-fi electric blue and cobalt.
-3. **Purple Galaxy** — Deep cosmos violet and magenta neon.
-4. **Toxic Green** — Biohazard matrix green and chartreuse.
-5. **Orange Inferno** — Volcanic ember and solar amber.
-6. **Pure Black** — Monochromatic stealth dark mode.
-7. **Gaming RGB** — Dynamic animated RGB Chroma spectrum.
+Run the server:
+```bash
+npm run server
+```
 
 ---
 
-## 📱 Responsive & Accessibility Features
+## 📂 Project Structure
 
-- Fully responsive across mobile smartphones, tablets, laptops, desktops, and ultrawide monitors.
-- Mobile drawer navigation with backdrop blur.
-- Respects `prefers-reduced-motion` settings.
-- Interactive crosshair cursor auto-hides on touch screens.
-- Keyboard accessible modal dialogs with `Escape` key listeners and focus trapping.
+```text
+src/
+├── animations/
+│   └── variants.js              # Framer Motion animation presets
+├── components/
+│   ├── animations/              # AnimatedCounter, MagneticButton, Reveal, TiltCard
+│   ├── gaming/                  # GameCard, GamingSetupCard, AchievementCard, ProfileCard
+│   ├── layout/                  # Navbar, Footer, PageLayout, SectionWrapper
+│   ├── streaming/               # LiveBadge, StreamCard, PlatformCard
+│   ├── ui/                      # Button, Card, Badge, Tooltip, Modal, Skeleton, ThemeSwitcher, LoadingScreen, AnimatedBackground, CustomCursor
+│   └── youtube/                 # YouTubeStats, VideoCard, VideoGrid, VideoModal, FeaturedVideo
+├── config/
+│   └── siteConfig.js            # Single source of truth configuration
+├── context/
+│   └── ThemeContext.jsx         # Global theme & visual FX context
+├── hooks/
+│   ├── useLiveStatus.js         # Livestream status poll
+│   ├── useScrollProgress.js     # Top scroll telemetry & active nav spy
+│   ├── useTheme.js              # Theme switcher hook
+│   ├── useYouTubeStats.js       # Channel subscriber & view analytics
+│   └── useYouTubeVideos.js      # Video gallery with search & filter
+├── pages/
+│   ├── Home.jsx                 # Single page battle station
+│   ├── NotFound.jsx             # 404 Radar anomaly glitch screen
+│   └── Videos.jsx               # Dedicated Video Vault
+├── services/
+│   ├── streamingService.js      # Kick status service
+│   └── youtubeService.js        # YouTube proxy & caching service
+├── styles/
+│   ├── animations.css           # Scanlines, cyber corner cuts, keyframes
+│   ├── globals.css              # Custom cursor & base typography
+│   └── themes.css               # CSS variables for 7 themes & accents
+server/
+└── index.js                     # Express API proxy
+public/
+├── images/                      # Vector SVGs (logos, avatars, games, setup, thumbs)
+└── logo.svg
+```
 
 ---
 
-## 📜 License & Credits
+## 📦 Deployment
 
-- Engineered for gamers by **Sreevisakh V S** (**Cruz Gaming**).
-- Open for creator customization and esports portfolio deployment.
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub.
+2. Import the repository in [Vercel](https://vercel.com/new).
+3. Framework Preset: **Vite**.
+4. Set Build Command: `npm run build`.
+5. Set Output Directory: `dist`.
+6. Add Environment Variables (if using backend proxy URL or standalone mode):
+   ```env
+   VITE_API_BASE_URL=/api
+   ```
+7. Click **Deploy**.
+
+### Production Build Locally
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/YOUR_USERNAME/Portfolio-for-gamers/issues).
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/EpicFeature`)
+3. Commit your Changes (`git commit -m 'Add some EpicFeature'`)
+4. Push to the Branch (`git push origin feature/EpicFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+## 👤 Author & Credits
+
+- **Creator**: Cruz Gaming ([@CruzGamingLive](https://www.youtube.com/@CruzGamingLive))
+- **Lead Developer**: **Sreevisakh V S**
+- **Live Preview**: [https://portfolio-for-gamers.vercel.app/](https://portfolio-for-gamers.vercel.app/)
+
+<div align="center">
+  <sub>Engineered with ❤️ for the global gaming community.</sub>
+</div>
