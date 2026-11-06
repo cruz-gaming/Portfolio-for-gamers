@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="erBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" />
+      <stop offset="50%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="600" height="800" fill="url(#erBg)" />
+  <!-- Elden Ring Concentric Intersecting Rings -->
+  <circle cx="300" cy="300" r="110" fill="none" stroke="url(#goldRing)" stroke-width="6" filter="url(#goldGlow)" />
+  <circle cx="250" cy="350" r="110" fill="none" stroke="url(#goldRing)" stroke-width="5" filter="url(#goldGlow)" />
+  <circle cx="350" cy="350" r="110" fill="none" stroke="url(#goldRing)" stroke-width="5" filter="url(#goldGlow)" />
+  <line x1="300" y1="140" x2="300" y2="520" stroke="url(#goldRing)" stroke-width="5" />
+  <path d="M180,480 Q300,530 420,480" fill="none" stroke="url(#goldRing)" stroke-width="5" />
+
+  <text x="300" y="630" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#ffffff" letter-spacing="6">ELDEN RING</text>
+  <text x="300" y="675" text-anchor="middle" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="20" fill="#facc15" letter-spacing="4">SHADOW OF THE ERDTREE</text>
+  <text x="300" y="720" text-anchor="middle" font-family="'Rajdhani', sans-serif" font-weight="600" font-size="16" fill="#a8a29e" letter-spacing="3">ELDEN LORD RUN</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060b" />
+      <stop offset="50%" stop-color="#0e1320" />
+      <stop offset="100%" stop-color="#05070c" />
+    </linearGradient>
+    <linearGradient id="neonRedCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1744" />
+      <stop offset="50%" stop-color="#7c4dff" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#bgGrad)" />
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Diagonal Cyber Beams -->
+  <line x1="0" y1="50" x2="1200" y2="350" stroke="#ff1744" stroke-width="2" opacity="0.3" />
+  <line x1="0" y1="350" x2="1200" y2="50" stroke="#00e5ff" stroke-width="2" opacity="0.2" />
+
+  <!-- Center Glow Orb -->
+  <circle cx="600" cy="200" r="180" fill="#ff1744" opacity="0.08" filter="blur(60px)" />
+  <circle cx="600" cy="200" r="120" fill="#00e5ff" opacity="0.08" filter="blur(50px)" />
+
+  <!-- Big Typography -->
+  <text x="600" y="190" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="76" fill="#ffffff" letter-spacing="12">
+    CRUZ GAMING
+  </text>
+  <text x="600" y="240" text-anchor="middle" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="24" fill="#00e5ff" letter-spacing="8">
+    LEVEL UP YOUR GAMING EXPERIENCE
+  </text>
+  
+  <!-- Cyber Bar Bottom -->
+  <rect x="0" y="394" width="1200" height="6" fill="url(#neonRedCyan)" />
+</svg>

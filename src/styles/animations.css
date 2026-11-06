@@ -1,0 +1,153 @@
+/* Advanced Gaming Visual Effects & Animations */
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary-glow);
+}
+
+/* Cyber Angled Cut Corners */
+.cyber-corner {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    14px 100%,
+    0 calc(100% - 14px)
+  );
+}
+
+.cyber-corner-lg {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 24px) 0,
+    100% 24px,
+    100% 100%,
+    24px 100%,
+    0 calc(100% - 24px)
+  );
+}
+
+.cyber-tag {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: var(--color-surface-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px -10px var(--color-primary-glow);
+}
+
+/* Cyber Grid Lines */
+.cyber-grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Scanline Overlay */
+.scanline-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Glow Text */
+.text-glow {
+  text-shadow: 0 0 12px var(--color-primary-glow), 0 0 24px var(--color-primary-glow);
+}
+
+.text-glow-secondary {
+  text-shadow: 0 0 12px var(--color-secondary-glow), 0 0 24px var(--color-secondary-glow);
+}
+
+/* Cyber Button Border Animation */
+@keyframes cyberBorderGlow {
+  0%, 100% {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 12px var(--color-primary-glow);
+  }
+  50% {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary-glow);
+  }
+}
+
+.cyber-animated-border {
+  animation: cyberBorderGlow 3s infinite alternate;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.floating-element {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+.reduced-motion *,
+.reduced-motion *::before,
+.reduced-motion *::after {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.001s !important;
+}

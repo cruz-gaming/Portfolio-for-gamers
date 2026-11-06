@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" fill="url(#streamGrad)" />
+  <!-- Stream Deck Console -->
+  <polygon points="120,100 380,100 410,260 90,260" fill="#1e293b" stroke="#3b82f6" stroke-width="3" />
+  <!-- LCD Keys Grid (3x5) -->
+  <g fill="#020617" stroke="#00e5ff" stroke-width="2" rx="4">
+    <rect x="135" y="120" width="40" height="32" rx="4" fill="#ff1744" />
+    <rect x="185" y="120" width="40" height="32" rx="4" />
+    <rect x="235" y="120" width="40" height="32" rx="4" />
+    <rect x="285" y="120" width="40" height="32" rx="4" />
+    <rect x="335" y="120" width="40" height="32" rx="4" fill="#10b981" />
+
+    <rect x="130" y="165" width="42" height="34" rx="4" />
+    <rect x="182" y="165" width="42" height="34" rx="4" fill="#a855f7" />
+    <rect x="234" y="165" width="42" height="34" rx="4" />
+    <rect x="286" y="165" width="42" height="34" rx="4" fill="#f59e0b" />
+    <rect x="338" y="165" width="42" height="34" rx="4" />
+
+    <rect x="125" y="210" width="44" height="34" rx="4" />
+    <rect x="179" y="210" width="44" height="34" rx="4" />
+    <rect x="233" y="210" width="44" height="34" rx="4" fill="#00e5ff" />
+    <rect x="287" y="210" width="44" height="34" rx="4" />
+    <rect x="341" y="210" width="44" height="34" rx="4" />
+  </g>
+</svg>

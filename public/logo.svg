@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744" />
+      <stop offset="100%" stop-color="#7c4dff" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <polygon points="100,10 185,55 185,145 100,190 15,145 15,55" fill="#080b12" stroke="url(#cyberRed)" stroke-width="6" />
+  <path d="M135,70 C125,55 110,48 95,48 C68,48 48,70 48,100 C48,130 68,152 95,152 C112,152 126,144 135,130" fill="none" stroke="url(#cyberRed)" stroke-width="16" stroke-linecap="round" />
+  <polygon points="90,100 155,75 140,100 155,125" fill="url(#neonCyan)" />
+  <circle cx="100" cy="100" r="7" fill="#ffffff" />
+</svg>

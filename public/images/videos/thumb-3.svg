@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#vBg3)" />
+  <rect x="40" y="50" width="140" height="36" rx="4" fill="#a855f7" />
+  <text x="110" y="74" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="16" fill="#ffffff">NOPIXEL 4.0</text>
+  <text x="40" y="150" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#ffffff">INSANE VAULT</text>
+  <text x="40" y="200" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#ef4444">HEIST ESCAPE!</text>
+  <text x="40" y="245" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#22c55e">$5,000,000 PAYOUT</text>
+  <rect x="540" y="310" width="80" height="30" rx="4" fill="rgba(0,0,0,0.8)" />
+  <text x="580" y="331" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#ffffff">32:10</text>
+</svg>

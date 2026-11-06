@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" />
+      <stop offset="60%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#vBg4)" />
+  <rect x="40" y="50" width="160" height="36" rx="4" fill="#f59e0b" />
+  <text x="120" y="74" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="16" fill="#000000">AIM SECRETS</text>
+  <text x="40" y="150" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#ffffff">TOP 10 PRO</text>
+  <text x="40" y="200" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#f59e0b">CROSSHAIR TIPS</text>
+  <text x="40" y="245" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#00e5ff">100% HEADSHOT ACCURACY</text>
+  <rect x="540" y="310" width="80" height="30" rx="4" fill="rgba(0,0,0,0.8)" />
+  <text x="580" y="331" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#ffffff">14:30</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="50%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+    <linearGradient id="visorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Circle & Tech Ring -->
+  <circle cx="150" cy="150" r="145" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="4" />
+  <circle cx="150" cy="150" r="138" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-dasharray="16 8" filter="url(#neonGlow)" />
+  <circle cx="150" cy="150" r="126" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Gamer Headset Silhouette -->
+  <path d="M75,150 C75,85 105,50 150,50 C195,50 225,85 225,150" fill="none" stroke="#334155" stroke-width="16" stroke-linecap="round" />
+  <!-- Ear Cups -->
+  <rect x="65" y="130" width="22" height="50" rx="8" fill="#ff1744" filter="url(#neonGlow)" />
+  <rect x="213" y="130" width="22" height="50" rx="8" fill="#ff1744" filter="url(#neonGlow)" />
+  <!-- Headset Microphone -->
+  <path d="M75,165 Q70,205 110,215" fill="none" stroke="#64748b" stroke-width="5" stroke-linecap="round" />
+  <rect x="110" y="210" width="14" height="10" rx="3" fill="#00e5ff" filter="url(#neonGlow)" />
+
+  <!-- Cybernetic Hood / Shoulders -->
+  <path d="M60,280 L100,225 L150,240 L200,225 L240,280 Z" fill="#0f172a" stroke="#1e293b" stroke-width="3" />
+  <path d="M100,225 L150,240 L200,225" fill="none" stroke="#ff1744" stroke-width="3" />
+
+  <!-- Cyber Face Mask / Helmet -->
+  <polygon points="110,135 150,110 190,135 178,210 150,228 122,210" fill="#0f172a" stroke="#334155" stroke-width="3" />
+  
+  <!-- Glowing Neon Visor -->
+  <polygon points="115,145 150,135 185,145 180,165 150,172 120,165" fill="url(#visorGrad)" filter="url(#neonGlow)" opacity="0.95" />
+  <!-- Visor Reflection Lines -->
+  <line x1="130" y1="145" x2="145" y2="165" stroke="#ffffff" stroke-width="2" opacity="0.8" />
+  
+  <!-- Lower Mask Vents -->
+  <line x1="135" y1="190" x2="165" y2="190" stroke="#00e5ff" stroke-width="2.5" />
+  <line x1="140" y1="198" x2="160" y2="198" stroke="#ff1744" stroke-width="2.5" />
+  
+  <!-- Tech Crosshair Indicators -->
+  <circle cx="150" cy="90" r="3" fill="#00e5ff" />
+  <line x1="150" y1="80" x2="150" y2="100" stroke="#00e5ff" stroke-width="1.5" />
+  <line x1="140" y1="90" x2="160" y2="90" stroke="#00e5ff" stroke-width="1.5" />
+</svg>

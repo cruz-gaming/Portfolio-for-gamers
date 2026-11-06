@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="monGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" fill="url(#monGrad)" />
+  <!-- Main Monitor Screen -->
+  <rect x="70" y="30" width="360" height="210" rx="8" fill="#0f172a" stroke="#00e5ff" stroke-width="3" />
+  <rect x="78" y="38" width="344" height="194" fill="#030712" />
+  <!-- Game crosshair on screen -->
+  <circle cx="250" cy="135" r="28" fill="none" stroke="#ff1744" stroke-width="2" />
+  <line x1="210" y1="135" x2="290" y2="135" stroke="#ff1744" stroke-width="2" />
+  <line x1="250" y1="95" x2="250" y2="175" stroke="#ff1744" stroke-width="2" />
+  <text x="250" y="215" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="12" fill="#00e5ff">360Hz QD-OLED</text>
+  <!-- Stand -->
+  <polygon points="235,240 265,240 270,300 230,300" fill="#334155" />
+  <polygon points="170,300 330,300 310,315 190,315" fill="#475569" stroke="#00e5ff" stroke-width="1" />
+</svg>

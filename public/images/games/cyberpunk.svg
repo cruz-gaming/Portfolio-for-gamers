@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcee09" />
+      <stop offset="25%" stop-color="#00e5ff" />
+      <stop offset="70%" stop-color="#0f0c29" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="#050508" />
+  <!-- Neon grid & buildings -->
+  <polygon points="50,600 180,300 240,300 240,600" fill="#0d111d" stroke="#00e5ff" stroke-width="2" />
+  <polygon points="260,600 340,200 420,200 420,600" fill="#141a2c" stroke="#fcee09" stroke-width="2" />
+  <polygon points="440,600 480,350 560,350 560,600" fill="#0d111d" stroke="#ff1744" stroke-width="2" />
+  <!-- Cyberpunk Yellow Stripe -->
+  <rect x="0" y="600" width="600" height="15" fill="#fcee09" />
+  <text x="300" y="660" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="44" fill="#00e5ff" letter-spacing="4">CYBERPUNK</text>
+  <text x="300" y="720" text-anchor="middle" font-family="'Orbitron', sans-serif" font-weight="900" font-size="62" fill="#fcee09" letter-spacing="8">2077</text>
+  <text x="300" y="760" text-anchor="middle" font-family="'Rajdhani', sans-serif" font-weight="600" font-size="18" fill="#e2e8f0" letter-spacing="4">NIGHT CITY • RAY TRACING OVERDRIVE</text>
+</svg>

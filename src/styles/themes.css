@@ -1,0 +1,144 @@
+/* Theme Definitions for Cruz Gaming */
+
+:root, [data-theme="cyber-red"] {
+  --color-primary: #ff1744;
+  --color-primary-glow: rgba(255, 23, 68, 0.4);
+  --color-secondary: #00e5ff;
+  --color-secondary-glow: rgba(0, 229, 255, 0.35);
+  --color-accent: #7c4dff;
+  --color-background: #060709;
+  --color-surface: #0e1117;
+  --color-surface-card: rgba(18, 22, 31, 0.75);
+  --color-surface-hover: rgba(28, 34, 48, 0.85);
+  --color-text: #f8fafc;
+  --color-muted: #94a3b8;
+  --color-border: rgba(255, 23, 68, 0.2);
+  --theme-gradient: linear-gradient(135deg, #ff1744, #7c4dff);
+}
+
+[data-theme="neon-blue"] {
+  --color-primary: #00e5ff;
+  --color-primary-glow: rgba(0, 229, 255, 0.45);
+  --color-secondary: #3b82f6;
+  --color-secondary-glow: rgba(59, 130, 246, 0.35);
+  --color-accent: #00f0ff;
+  --color-background: #040810;
+  --color-surface: #0a1120;
+  --color-surface-card: rgba(12, 22, 40, 0.75);
+  --color-surface-hover: rgba(18, 34, 64, 0.85);
+  --color-text: #f0f9ff;
+  --color-muted: #94a3b8;
+  --color-border: rgba(0, 229, 255, 0.25);
+  --theme-gradient: linear-gradient(135deg, #00e5ff, #3b82f6);
+}
+
+[data-theme="purple-galaxy"] {
+  --color-primary: #a855f7;
+  --color-primary-glow: rgba(168, 85, 247, 0.45);
+  --color-secondary: #ec4899;
+  --color-secondary-glow: rgba(236, 72, 153, 0.35);
+  --color-accent: #c084fc;
+  --color-background: #080410;
+  --color-surface: #120a22;
+  --color-surface-card: rgba(24, 13, 44, 0.75);
+  --color-surface-hover: rgba(38, 21, 68, 0.85);
+  --color-text: #faf5ff;
+  --color-muted: #a1a1aa;
+  --color-border: rgba(168, 85, 247, 0.25);
+  --theme-gradient: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+[data-theme="toxic-green"] {
+  --color-primary: #10b981;
+  --color-primary-glow: rgba(16, 185, 129, 0.45);
+  --color-secondary: #84cc16;
+  --color-secondary-glow: rgba(132, 204, 22, 0.35);
+  --color-accent: #06b6d4;
+  --color-background: #030a06;
+  --color-surface: #07150c;
+  --color-surface-card: rgba(9, 28, 16, 0.75);
+  --color-surface-hover: rgba(14, 44, 25, 0.85);
+  --color-text: #f0fdf4;
+  --color-muted: #86efac;
+  --color-border: rgba(16, 185, 129, 0.25);
+  --theme-gradient: linear-gradient(135deg, #10b981, #84cc16);
+}
+
+[data-theme="orange-inferno"] {
+  --color-primary: #ff5722;
+  --color-primary-glow: rgba(255, 87, 34, 0.45);
+  --color-secondary: #ffb300;
+  --color-secondary-glow: rgba(255, 179, 0, 0.35);
+  --color-accent: #ff9100;
+  --color-background: #0a0604;
+  --color-surface: #170d08;
+  --color-surface-card: rgba(30, 16, 10, 0.75);
+  --color-surface-hover: rgba(48, 25, 15, 0.85);
+  --color-text: #fffaf0;
+  --color-muted: #fdba74;
+  --color-border: rgba(255, 87, 34, 0.25);
+  --theme-gradient: linear-gradient(135deg, #ff5722, #ffb300);
+}
+
+[data-theme="pure-black"] {
+  --color-primary: #ffffff;
+  --color-primary-glow: rgba(255, 255, 255, 0.35);
+  --color-secondary: #71717a;
+  --color-secondary-glow: rgba(113, 113, 122, 0.3);
+  --color-accent: #a1a1aa;
+  --color-background: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-card: rgba(18, 18, 18, 0.85);
+  --color-surface-hover: rgba(30, 30, 30, 0.95);
+  --color-text: #ffffff;
+  --color-muted: #71717a;
+  --color-border: rgba(255, 255, 255, 0.15);
+  --theme-gradient: linear-gradient(135deg, #ffffff, #71717a);
+}
+
+[data-theme="gaming-rgb"] {
+  --color-primary: #f43f5e;
+  --color-primary-glow: rgba(244, 63, 94, 0.45);
+  --color-secondary: #06b6d4;
+  --color-secondary-glow: rgba(6, 182, 212, 0.35);
+  --color-accent: #8b5cf6;
+  --color-background: #07070d;
+  --color-surface: #0f101d;
+  --color-surface-card: rgba(20, 21, 38, 0.75);
+  --color-surface-hover: rgba(32, 34, 62, 0.85);
+  --color-text: #ffffff;
+  --color-muted: #a5b4fc;
+  --color-border: rgba(244, 63, 94, 0.25);
+  --theme-gradient: linear-gradient(90deg, #f43f5e, #8b5cf6, #06b6d4, #10b981);
+}
+
+/* Color Accent Overrides */
+[data-accent="red"] {
+  --color-primary: #ff1744 !important;
+  --color-primary-glow: rgba(255, 23, 68, 0.45) !important;
+  --color-border: rgba(255, 23, 68, 0.25) !important;
+}
+
+[data-accent="cyan"] {
+  --color-primary: #00e5ff !important;
+  --color-primary-glow: rgba(0, 229, 255, 0.45) !important;
+  --color-border: rgba(0, 229, 255, 0.25) !important;
+}
+
+[data-accent="purple"] {
+  --color-primary: #a855f7 !important;
+  --color-primary-glow: rgba(168, 85, 247, 0.45) !important;
+  --color-border: rgba(168, 85, 247, 0.25) !important;
+}
+
+[data-accent="emerald"] {
+  --color-primary: #10b981 !important;
+  --color-primary-glow: rgba(16, 185, 129, 0.45) !important;
+  --color-border: rgba(16, 185, 129, 0.25) !important;
+}
+
+[data-accent="amber"] {
+  --color-primary: #f59e0b !important;
+  --color-primary-glow: rgba(245, 158, 11, 0.45) !important;
+  --color-border: rgba(245, 158, 11, 0.25) !important;
+}

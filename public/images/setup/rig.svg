@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2d" />
+      <stop offset="100%" stop-color="#0a0a10" />
+    </linearGradient>
+    <linearGradient id="neonTube" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff1744" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" rx="12" fill="url(#pcGrad)" stroke="#ff1744" stroke-width="2" />
+  <!-- Glass Window Inner -->
+  <rect x="50" y="30" width="400" height="290" rx="8" fill="#06060c" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+  <!-- RGB Fans -->
+  <circle cx="130" cy="110" r="45" fill="none" stroke="#00e5ff" stroke-width="6" opacity="0.8" />
+  <circle cx="130" cy="220" r="45" fill="none" stroke="#ff1744" stroke-width="6" opacity="0.8" />
+  <!-- GPU -->
+  <rect x="220" y="150" width="200" height="50" rx="4" fill="#181828" stroke="#00e5ff" stroke-width="2" />
+  <text x="320" y="180" text-anchor="middle" font-family="'Orbitron', sans-serif" font-size="14" font-weight="700" fill="#00e5ff">RTX 4090 24GB</text>
+  <!-- Cooling Tubes -->
+  <path d="M 280 80 Q 340 120 340 150" fill="none" stroke="url(#neonTube)" stroke-width="8" stroke-linecap="round" />
+  <path d="M 310 80 Q 370 120 370 150" fill="none" stroke="url(#neonTube)" stroke-width="8" stroke-linecap="round" />
+  <!-- AIO CPU Block -->
+  <circle cx="295" cy="75" r="24" fill="#111" stroke="#ff1744" stroke-width="3" />
+  <circle cx="295" cy="75" r="8" fill="#ff1744" />
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="audioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" fill="url(#audioGrad)" />
+  <!-- Headphones arc -->
+  <path d="M 150 190 C 150 100, 350 100, 350 190" fill="none" stroke="#475569" stroke-width="20" stroke-linecap="round" />
+  <path d="M 150 190 C 150 100, 350 100, 350 190" fill="none" stroke="#ff1744" stroke-width="4" stroke-linecap="round" />
+  <!-- Ear cups -->
+  <rect x="130" y="170" width="36" height="70" rx="14" fill="#0f172a" stroke="#00e5ff" stroke-width="3" />
+  <rect x="334" y="170" width="36" height="70" rx="14" fill="#0f172a" stroke="#00e5ff" stroke-width="3" />
+  <!-- Studio Shure SM7B Mic in front -->
+  <rect x="235" y="180" width="30" height="75" rx="10" fill="#1e293b" stroke="#94a3b8" stroke-width="2" />
+  <line x1="250" y1="255" x2="250" y2="310" stroke="#64748b" stroke-width="6" />
+  <line x1="210" y1="310" x2="290" y2="310" stroke="#64748b" stroke-width="6" stroke-linecap="round" />
+</svg>
